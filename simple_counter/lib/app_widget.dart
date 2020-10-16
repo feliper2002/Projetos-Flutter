@@ -5,6 +5,8 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      /// remove aquele banner de debug (debugShowCheckedModeBanner)
+      debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
   }

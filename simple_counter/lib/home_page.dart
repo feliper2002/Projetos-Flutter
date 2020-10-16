@@ -12,12 +12,17 @@ class HomePageStates extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
+    return Scaffold(
+      backgroundColor: Colors.grey[300],
+      appBar: AppBar(
+        title: Text('Contador - By: Felipe'),
+        backgroundColor: Colors.green,
+      ),
+      body: Center(
           child: GestureDetector(
         // Detecta ações
         child: Text(
-          'Counter: $counter',
+          'Click-me!\nCounter: $counter',
           style: TextStyle(
               color: Colors.green,
               decoration: TextDecoration.none,
@@ -30,6 +35,15 @@ class HomePageStates extends State<HomePage> {
           });
         },
       )),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.exposure_zero),
+        backgroundColor: Colors.green,
+        onPressed: () {
+          setState(() {
+            counter = 0;
+          });
+        },
+      ),
     );
   }
 }
