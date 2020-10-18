@@ -35,14 +35,17 @@ class HomePageStates extends State<HomePage> {
           });
         },
       )),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.exposure_zero),
-        backgroundColor: Colors.green,
-        onPressed: () {
-          setState(() {
-            counter = 0;
-          });
-        },
+      floatingActionButton: Padding(
+        padding: const EdgeInsets.only(right: 300.0),
+        child: FloatingActionButton(
+          child: Icon(Icons.exposure_zero),
+          backgroundColor: Colors.green,
+          onPressed: () {
+            setState(() {
+              counter = 0;
+            });
+          },
+        ),
       ),
     );
   }
