@@ -34,7 +34,8 @@ class AppWidget extends StatelessWidget {
           textDirection: TextDirection.ltr,
           style: TextStyle(
               color: Colors.blue[300],
-              fontSize: 50.0,
+              backgroundColor: Colors.purple,
+              fontSize: 70.0,
               fontWeight: FontWeight.w800),
         ),
       ),
