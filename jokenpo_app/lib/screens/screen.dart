@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jokenpo_app/styles/text_styles.dart';
+import 'package:JokenPo/styles/text_styles.dart';
 import 'dart:math';
 
 class HomeScreenApp extends StatelessWidget {
@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final String _titleApp = 'JokenPô';
   var score_user = 0, score_cel = 0;
   var _imagemApp = AssetImage('images/padrao.png');
-  var _message = 'Escolha uma das opções apaixo.';
+  var _message = 'Escolha uma das opções abaixo.';
 
   void _selectedOption(String choiceUser) {
     var options = [
@@ -125,7 +125,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Image.asset('images/tesoura.png', width: 100),
               ),
             ]),
-            Text('Pontuação (Máximo: 10)', style: estilo_pontuacao),
+            Text('Pontuação', style: estilo_pontuacao),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
