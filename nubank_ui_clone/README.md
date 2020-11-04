@@ -1,4 +1,4 @@
-# nubank_ui_clone
+# Nubank UI Clone (Pausado por enquanto)
 
 A new Flutter project.
 
