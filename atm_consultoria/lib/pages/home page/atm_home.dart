@@ -1,11 +1,11 @@
 import 'dart:js';
-
-import 'package:atm_consultoria/constants/colors/home_colors.dart';
-import 'package:atm_consultoria/pages/atm_clientes.dart';
-import 'package:atm_consultoria/pages/atm_contato.dart';
-import 'package:atm_consultoria/pages/atm_empresa.dart';
-import 'package:atm_consultoria/pages/atm_servicos.dart';
 import 'package:flutter/material.dart';
+// Imports
+import 'package:atm_consultoria/constants/colors/home_colors.dart';
+import 'package:atm_consultoria/pages/atm pages/atm_clientes.dart';
+import 'package:atm_consultoria/pages/atm pages/atm_contato.dart';
+import 'package:atm_consultoria/pages/atm pages/atm_empresa.dart';
+import 'package:atm_consultoria/pages/atm pages/atm_servicos.dart';
 
 class HomeScreen extends StatefulWidget {
   @override

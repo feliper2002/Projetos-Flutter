@@ -1,4 +1,4 @@
-import 'package:atm_consultoria/pages/atm_home.dart';
+import 'package:atm_consultoria/pages/home page/atm_home.dart';
 import 'package:flutter/material.dart';
 
 class ATMConsultoria extends StatelessWidget {
