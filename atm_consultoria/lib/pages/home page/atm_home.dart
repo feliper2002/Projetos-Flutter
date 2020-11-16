@@ -1,4 +1,3 @@
-import 'dart:js';
 import 'package:flutter/material.dart';
 // Imports
 import 'package:atm_consultoria/constants/colors/home_colors.dart';
@@ -13,6 +12,26 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  void _abrirEmpresa() {
+    Navigator.push(
+        this.context, MaterialPageRoute(builder: (context) => AEmpresa()));
+  }
+
+  void _abrirServicos() {
+    Navigator.push(
+        this.context, MaterialPageRoute(builder: (context) => Servicos()));
+  }
+
+  void _abrirClientes() {
+    Navigator.push(
+        this.context, MaterialPageRoute(builder: (context) => Clientes()));
+  }
+
+  void _abrirContato() {
+    Navigator.push(
+        this.context, MaterialPageRoute(builder: (context) => Contato()));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,11 +53,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () => _abrirEmpresa(),
                     child: Image.asset('lib/assets/images/menu_empresa.png'),
                   ),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () => _abrirServicos(),
                     child: Image.asset('lib/assets/images/menu_servico.png'),
                   ),
                 ],
@@ -50,11 +69,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () => _abrirClientes(),
                     child: Image.asset('lib/assets/images/menu_cliente.png'),
                   ),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () => _abrirContato(),
                     child: Image.asset('lib/assets/images/menu_contato.png'),
                   ),
                 ],
